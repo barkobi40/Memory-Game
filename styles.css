@@ -1,0 +1,142 @@
+@font-face {
+  font-family: NewFont;
+  src: url(fonts/PermanentMarker-Regular.ttf);
+}
+@font-face {
+  font-family: SecondFont ;
+  src: url(fonts/RussoOne-Regular.ttf);
+}
+
+body {
+  font-family: monospace, sans-serif;;
+  background-color: #f2f2f2;
+  background-image: url("./src/icons/space.png") ;
+  padding: 20px;
+  text-align: center;
+}
+
+
+h1 {
+  font-family:"NewFont";
+  font-size: 90px;
+  margin-bottom: 20px;
+  color: lightblue;
+
+}
+
+h3{
+  color: lightblue;
+  font-family:"SecondFont";
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#game {
+  margin-top: 20px;
+}
+#gameInfo1{
+margin-right: 30px;
+}
+#gameInfo2{
+  margin-right: 140px;
+}
+#player-info {
+  color: lightblue;
+  font-family:"SecondFont";
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#clock {
+  color: lightblue;
+  font-family:"SecondFont";
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+label{
+  color: lightblue;
+  font-family:"SecondFont";
+}
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#result {
+  color: lightblue;
+  font-family:"SecondFont";
+}
+.card {
+  color: transparent;
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card.open.visible{
+  color: black;
+  font-size: 20px;
+}
+
+.card.visible.matched{
+  color: black;
+  font-size: 40px;
+  font-weight: 400;
+  background-color: #82d785;
+}
+
+.play-again {
+  margin-top: 20px;
+}
+
+
+.play-again button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+footer{
+  color: white;
+  font-family:"SecondFont";
+  font-size: 20px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
